@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>header template</title>
+    <style type="text/css">
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        header {
+            display: grid;
+            width: 100%;
+            background-color: #ccc;
+            grid-template-columns: 100px 1fr 200px;
+        }
+        header > div {
+            border:solid 1px #888;
+            margin: auto 0;
+        }
+        header > div:first-child {
+            text-align: right;
+            padding-right: 8px;
+            font-size: 2em;
+        }
+        header > div:last-child {
+            padding-left: 8px;
+        }
+
+        footer {
+            height: 40px;
+            background-color: #ccc;
+        }
+
+        main {
+            display: grid;
+            grid-template-columns: 200px 1fr;
+        }
+        nav {
+            min-height: 200px;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+            background-color: #f1f1f1;
+        }
+        a {
+            text-decoration: none;
+            color: #666;
+        }
+        nav li {
+            padding:30px 10px;
+            text-align: center;
+            border:solid 1px #ededed;
+            transition: all 0.2s;
+        }
+        nav li:hover {
+            box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">logo</div>
+        <div class="title">title</div>
+        <div class="control">exit</div>
+    </header>
+
+    <main>
+        <nav>
+            <ul>
+                <li><a href="javascript:void(0)">HOME</a></li>
+                <li><a href="javascript:void(0)">SERVER</a></li>
+                <li><a href="javascript:void(0)">REPORT</a></li>
+                <li><a href="javascript:void(0)">MONITOR</a></li>
+                <li><a href="javascript:void(0)">HELP</a></li>
+            </ul>
+        </nav>
+        <div>main</div>
+    </main>
+
+    <footer>
+        footer
+    </footer>
+
+</body>
+</html>
