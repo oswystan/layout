@@ -7,6 +7,10 @@
             padding: 0;
             margin: 0;
         }
+        body {
+
+            background-color: #f7f7f7;
+        }
         header {
             display: grid;
             width: 100%;
@@ -37,11 +41,12 @@
         }
         nav {
             min-height: 200px;
+            background-color: #fff;
         }
         ul {
             list-style: none;
             padding: 0;
-            background-color: #f1f1f1;
+            height: 100%;
         }
         a {
             text-decoration: none;
@@ -51,10 +56,21 @@
             padding:30px 10px;
             text-align: center;
             border:solid 1px #ededed;
-            transition: all 0.2s;
+            transition: all 0.3s;
+            font-size: 0.8em;
         }
         nav li:hover {
-            box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 1px 4px 1px rgba(0, 0, 0, 0.1);
+        }
+        nav .content {
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+        .content {
+            margin: auto;
+        }
+        .content > div {
+            border:solid 1px #ccc;
         }
     </style>
 </head>
@@ -76,7 +92,9 @@
                 <li><a href="javascript:void(0)">HELP</a></li>
             </ul>
         </nav>
-        <div>main</div>
+        <div class="content">
+            <div style="width: 300px; height: 600px">sdkfjsldfsldkfs lkdjfslkdj fslkdjfs lkjflskjdflskjdflkjl</div>
+        </div>
     </main>
 
     <footer>
