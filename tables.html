@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>tables</title>
+    <style type="text/css">
+        th, td {
+            padding: 14px 8px;
+        }
+        th {
+            background-color: #00b386;
+            color: #fff;
+            cursor: pointer;
+        }
+        #tables tr:hover {
+            background-color: #e6fff9;
+        }
+        #tables {
+            border: solid 1px #00b386;
+            border-radius: 2px;
+        }
+
+        input {
+            padding: 10px 8px;
+        }
+
+        #forms td {
+            padding: 4px 10px;
+        }
+        #forms {
+            border-style: none;
+            border: solid 1px #eee;
+            border-radius: 8px;
+            box-shadow: 1px 1px 4px 1px rgba(0,0,0,0.1);
+            padding: 10px 80px;
+        }
+        button {
+            padding: 10px 40px;
+            background-color: #00e6ac;
+            border:none;
+            border-radius: 2px;
+            color: #fff;
+            font-size: 1em;
+            font-family: "operator mono";
+            transition: all 0.2s ease;
+            cursor: pointer;
+        }
+        button:hover {
+            box-shadow: 1px 1px 2px 1px rgba(0,0,0,0.1);
+        }
+        #forms h3 {
+            padding: 0;
+            margin: 0;
+            color: #444;
+        }
+        hr {
+            border: solid 1px #ddd;
+        }
+    </style>
+</head>
+<body>
+
+    <h3>EMPLOYEES</h3>
+    <table border="0" cellspacing="0" id="tables">
+        <tr>
+            <th>ID</th>
+            <th>NAME</th>
+            <th>DEPT</th>
+            <th>PHONE</th>
+            <th>EMAIL</th>
+        </tr>
+        <tr>
+            <td>1001</td>
+            <td>John.Smith</td>
+            <td>RnD</td>
+            <td>1920394859</td>
+            <td>john@gmail.com</td>
+        </tr>
+        <tr>
+            <td>1002</td>
+            <td>Tom</td>
+            <td>MARKEING</td>
+            <td>19383749493</td>
+            <td>tom.kent@gmail.com</td>
+        </tr>
+        <tr>
+            <td>1001</td>
+            <td>John.Smith</td>
+            <td>RnD</td>
+            <td>1920394859</td>
+            <td>john@gmail.com</td>
+        </tr>
+        <tr>
+            <td>1002</td>
+            <td>Tom</td>
+            <td>MARKEING</td>
+            <td>19383749493</td>
+            <td>tom.kent@gmail.com</td>
+        </tr>
+    </table>
+
+    <hr>
+    <table border="0" cellspacing="0" id="forms">
+        <tr>
+            <td colspan="2">
+                <h3>LOGIN</h3>
+                <hr>
+            </td>
+        </tr>
+        <tr>
+            <td>USERNAME:</td>
+            <td><input type="text" name="username"></td>
+        </tr>
+        <tr>
+            <td>PASSWORD:</td>
+            <td><input type="password" name="password"></td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center">
+                <button>LOGIN</button>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
